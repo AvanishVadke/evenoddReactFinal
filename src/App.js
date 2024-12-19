@@ -1,24 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Result from "./Result";
+import EvenOdd from "./EvenOdd";
+import About from './About';
+import Page404 from './Page404';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element = { <EvenOdd /> } />
+        <Route path='/result' element = { <Result /> } />
+        <Route path='/avout' element = { <About /> } />
+        <Route path='*' element = { <Page404 /> } />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

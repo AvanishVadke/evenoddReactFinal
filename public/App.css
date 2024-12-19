@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg, #1b1b3a, #0d0d1f);
+  color: #ffffff;
+  text-align: center;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.nav {
+  background-color: #1e1e40;
+  padding: 2vh 0;
+  display: flex;
+  justify-content: center;
+  gap: 3vw;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+.nav a {
+  text-decoration: none;
+  color: #80caff;
+  font-size: 1.5vw;
+  font-weight: bold;
+  padding: 0.5vh 1vw;
+  border-radius: 0.5vw;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav a:hover {
+  background-color: #80caff;
+  color: #0d0d1f;
+}
+
+/* Page404 Specific */
+.page404 {
+  margin-top: 5vh;
+  color: #ff6666; /* Highlight error in a distinct shade */
+  font-size: 6vw;
+  font-weight: bold;
+}
+
+.page404 img {
+  width: 20vw;
+  height: auto;
+  margin: 3vh 0;
+  border-radius: 1vw;
+  box-shadow: 0 0.8vw 1.5vw rgba(0, 0, 0, 0.3);
+}
+
+.page404 p {
+  margin-top: 2vh;
+  font-size: 1.5vw;
+  color: #80caff;
+  background: #1e1e40;
+  padding: 1vh 2vw;
+  border-radius: 1vw;
+  display: inline-block;
+  box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.4);
+}
+
+/* Links */
+a {
+  color: #80caff;
+  font-size: 1.5vw;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #50b6f0;
+}
+
+/* Headers */
+h1,
+h2 {
+  margin: 2vh 0;
+  text-shadow: 0.2vw 0.2vw 0.5vw rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  font-size: 3vw;
+  color: #50b6f0;
+}
+
+h2 {
+  font-size: 2.5vw;
+  color: #80caff;
+}
